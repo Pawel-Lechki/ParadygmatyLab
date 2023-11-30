@@ -1,0 +1,21 @@
+Etap 1
+1. Gdy obiekt zosta³ stowrzony za pomoc¹ bezparametrowego konstruktora 
+to pola obiektu zosta³y zaincjalizowane z wartoœcami jakie podaliœmy w 
+tym konstuktorze.
+
+Etap 2
+1. W obecnej sutuacji ka¿de w³aœiwoœci nowych obiektów, bêdza posiadaæ 
+takie same wartoœci i tym samym musimy pamiêtaæ o ich ka¿dowarozej zmianie,
+co jest nie praktyczne.
+
+2.1 W pyzpadku podania innych danych oraz kuminikatu, który zosta³ wyœwietlony
+przez dany konstruktor jestem w stanie wskazaæ, który z nich zosta³ wywo³any.
+
+Etap 3
+1.1 Tak, za pomoca konstruktora moge utwo¿yæ nowy obiekt.
+1.2 Tak, za moc¹ funkcji getClinetInfo() moge odczytac wartoœæ pól.
+4.1 Przy rezygmacji z hermetyzacji, zrobienie takiego ograniczenia 
+nie by³o by mo¿liwe
+4.2 Ustawinie wartoœci pól poprzez konstruktor parametrowy z list¹
+inicalizacyjn¹ nie podlego wporwadzonym organiczeniom, takie ogranicznie
+nale¿a³oby wprowadziæ w konstruktorze.
