@@ -9,9 +9,9 @@ namespace ParadygmatyLab.model
     public class Mope : MotoVehicle
     {
         private double actualReantalPrice;
-        public Mope(int engineDisplacement, double baseReantPriceModifer, int baseReantPrice, string id) : base(engineDisplacement, baseReantPriceModifer, baseReantPrice, id)
+        public Mope(int engineDisplacement, int baseReantPrice, string id) : base(engineDisplacement, baseReantPrice, id)
         {
-            this.actualReantalPrice = baseReantPrice * baseReantPriceModifer;
+            this.actualReantalPrice = baseReantPrice * this.getBaseReantPriceModifer();
         }
     }
 }

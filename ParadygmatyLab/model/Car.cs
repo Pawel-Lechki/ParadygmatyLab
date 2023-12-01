@@ -19,9 +19,9 @@ namespace ParadygmatyLab.model
     {
         private double actualReantalPrice;
 
-        public Car(Segment carSegment, int engineDisplacement, double baseReantPriceModifer, int baseReantPrice, string id) : base(engineDisplacement, baseReantPriceModifer, baseReantPrice, id)
+        public Car(Segment carSegment, int engineDisplacement, int baseReantPrice, string id) : base(engineDisplacement, baseReantPrice, id)
         {
-            this.actualReantalPrice = baseReantPrice * base.getBaseReantPriceModifer() * (1.0 + (double)carSegment * 1.0);
+            this.actualReantalPrice = baseReantPrice * this.getBaseReantPriceModifer() * (1.0 + (double)carSegment * 1.0);
         }
     }
 }

@@ -11,7 +11,7 @@ namespace ParadygmatyLab.model
         private int engineDisplacement;
         private double baseReantPriceModifer;
         
-        public MotoVehicle(int engineDisplacement, double baseReantPriceModifer, int baseReantPrice, string id) : base(baseReantPrice, id)
+        public MotoVehicle(int engineDisplacement, int baseReantPrice, string id) : base(baseReantPrice, id)
         {
             this.engineDisplacement = engineDisplacement;
             this.baseReantPriceModifer = CalculatePriceModifer(engineDisplacement);

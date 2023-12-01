@@ -10,6 +10,7 @@ namespace ParadygmatyLab.model
     {
         private readonly int baseReantPrice;
         private readonly string id;
+        private Rent currentRent;
 
         public Vehicle(int baseReantPrice, string id)
         {
@@ -17,7 +18,17 @@ namespace ParadygmatyLab.model
             this.id = id;
         }
 
-        public string vihicleInfo()
+        public bool IsAvailable()
+        {
+            return currentRent == null;
+        }
+
+        public void setRent(Rent rent)
+        {
+            currentRent = rent;
+        }
+
+        public string vehicleInfo()
         {
             return id + " " + baseReantPrice.ToString();
         }
